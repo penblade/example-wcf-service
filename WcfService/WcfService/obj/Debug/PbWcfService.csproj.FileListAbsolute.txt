@@ -1,0 +1,12 @@
+C:\FileServer\Solutions\StaticSite\Site\PbWcfService\SimpleService\bin\PbWcfService.dll.config
+C:\FileServer\Solutions\StaticSite\Site\PbWcfService\SimpleService\bin\PbWcfService.dll
+C:\FileServer\Solutions\StaticSite\Site\PbWcfService\SimpleService\bin\PbWcfService.pdb
+C:\FileServer\Solutions\StaticSite\Site\PbWcfService\SimpleService\obj\Debug\PbWcfService.csprojResolveAssemblyReference.cache
+C:\FileServer\Solutions\StaticSite\Site\PbWcfService\SimpleService\obj\Debug\PbWcfService.dll
+C:\FileServer\Solutions\StaticSite\Site\PbWcfService\SimpleService\obj\Debug\PbWcfService.pdb
+C:\FileServer\Solutions\StaticSite\Site\PbWcfService\PbWcfService\bin\PbWcfService.dll.config
+C:\FileServer\Solutions\StaticSite\Site\PbWcfService\PbWcfService\bin\PbWcfService.dll
+C:\FileServer\Solutions\StaticSite\Site\PbWcfService\PbWcfService\bin\PbWcfService.pdb
+C:\FileServer\Solutions\StaticSite\Site\PbWcfService\PbWcfService\obj\Debug\PbWcfService.csprojResolveAssemblyReference.cache
+C:\FileServer\Solutions\StaticSite\Site\PbWcfService\PbWcfService\obj\Debug\PbWcfService.dll
+C:\FileServer\Solutions\StaticSite\Site\PbWcfService\PbWcfService\obj\Debug\PbWcfService.pdb

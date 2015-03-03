@@ -1,0 +1,12 @@
+C:\Users\ahinkle\Desktop\chrome notification\SimpleService\SimpleService\bin\SimpleService.dll.config
+C:\Users\ahinkle\Desktop\chrome notification\SimpleService\SimpleService\bin\SimpleService.dll
+C:\Users\ahinkle\Desktop\chrome notification\SimpleService\SimpleService\bin\SimpleService.pdb
+C:\Users\ahinkle\Desktop\chrome notification\SimpleService\SimpleService\obj\Debug\SimpleService.dll
+C:\Users\ahinkle\Desktop\chrome notification\SimpleService\SimpleService\obj\Debug\SimpleService.pdb
+C:\Users\ahinkle\Desktop\chrome notification\SimpleService\SimpleService\obj\Debug\SimpleService.csprojResolveAssemblyReference.cache
+C:\FileServer\Solutions\StaticSite\Site\SoapAndJsonService\SimpleService\bin\SimpleService.dll.config
+C:\FileServer\Solutions\StaticSite\Site\SoapAndJsonService\SimpleService\bin\SimpleService.dll
+C:\FileServer\Solutions\StaticSite\Site\SoapAndJsonService\SimpleService\bin\SimpleService.pdb
+C:\FileServer\Solutions\StaticSite\Site\SoapAndJsonService\SimpleService\obj\Debug\SimpleService.csprojResolveAssemblyReference.cache
+C:\FileServer\Solutions\StaticSite\Site\SoapAndJsonService\SimpleService\obj\Debug\SimpleService.dll
+C:\FileServer\Solutions\StaticSite\Site\SoapAndJsonService\SimpleService\obj\Debug\SimpleService.pdb

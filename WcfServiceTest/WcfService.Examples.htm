@@ -1,0 +1,83 @@
+﻿<!DOCTYPE html>
+<html>
+	<head>
+        <title>Pen Blade Example Wcf Service</title>
+		<meta charset="utf-8">
+	    <link rel="stylesheet" href="css/bootstrap.min.css">
+	</head>
+	<body>
+		<div class="container">
+            <div class="row">
+                <div class="col-md-12">
+			        <h1>Pen Blade Example Wcf Service Examples</h1>
+                    <p id="ErrorMessage"></p>
+                    <form method="post">
+                        <fieldset>
+                            <legend>Example Wcf Service method have no parameters</legend>
+                            <ul>
+                                <li class="form-group">
+                                    <input id="helloWorldRestSubmitJsonReturnJsonButton" class="btn btn-primary" type="submit" name="helloWorldRestSubmitJsonReturnJsonButton" value="Hello World (Rest Submit Json / Return Json)" />
+                                </li>
+                                <li class="form-group">
+                                    <input id="helloWorldRestSubmitJsonReturnXmlButton" class="btn btn-primary" type="submit" name="helloWorldRestSubmitJsonReturnXmlButton" value="Hello World (Rest Submit Json / Return Xml)" />
+                                </li>
+                                <li class="form-group">
+                                    <input id="helloWorldRestSubmitXmlReturnJsonButton" class="btn btn-primary" type="submit" name="helloWorldRestSubmitXmlReturnJsonButton" value="Hello World (Rest Submit Soap Xml / Return Json)" />
+                                </li>
+                                <li class="form-group">
+                                    <input id="helloWorldRestSubmitXmlReturnXmlButton" class="btn btn-primary" type="submit" name="helloWorldRestSubmitXmlReturnXmlButton" value="Hello World (Rest Submit Soap Xml / Return Xml)" />
+                                </li>
+                                <li class="form-group">
+                                    <input id="helloWorldSoapButton" class="btn btn-primary" type="submit" name="helloWorldSoapButton" value="Hello World (Soap)" />
+                                </li>
+                            </ul>
+                        </fieldset>
+                        <fieldset>
+                            <legend>Example Wcf Service methods with a single primitive type parameter like string</legend>
+                            <ul>
+                                <li class="form-group">
+                                    <input id="welcomeHomeRestSubmitJsonReturnJsonButton" class="btn btn-primary" type="submit" name="welcomeHomeRestSubmitJsonReturnJsonButton" value="Welcome Home (Submit Json / Return Json)" />
+                                </li>
+                                <li class="form-group">
+                                    <input id="welcomeHomeRestSubmitJsonReturnXmlButton" class="btn btn-primary" type="submit" name="welcomeHomeRestSubmitJsonReturnXmlButton" value="Welcome Home (Submit Json / Return Xml)" />
+                                </li>
+                                <li class="form-group">
+                                    <input id="welcomeHomeRestSubmitXmlReturnJsonButton" class="btn btn-primary" type="submit" name="welcomeHomeRestSubmitXmlReturnJsonButton" value="Welcome Home (Submit Soap Xml / Return Json)" />
+                                </li>
+                                <li class="form-group">
+                                    <input id="welcomeHomeRestSubmitXmlReturnXmlButton" class="btn btn-primary" type="submit" name="welcomeHomeRestSubmitXmlReturnXmlButton" value="Welcome Home (Submit Soap Xml / Return Xml)" />
+                                </li>
+                                <li class="form-group">
+                                    <input id="welcomeHomeSoapButton" class="btn btn-primary" type="submit" name="welcomeHomeSoapButton" value="Welcome Home (Soap)" />
+                                </li>
+                            </ul>
+                        </fieldset>
+                        <fieldset>
+                            <legend>Example Wcf Service methods with a request and response object</legend>
+                            <ul>
+                                <li class="form-group">
+                                    <input id="lookingForGroupRestSubmitJsonReturnJsonButton" class="btn btn-primary" type="submit" name="lookingForGroupRestSubmitJsonReturnJsonButton" value="Looking For Group (Submit Json / Return Json)" />
+                                </li>
+                                <li class="form-group">
+                                    <input id="lookingForGroupRestSubmitJsonReturnXmlButton" class="btn btn-primary" type="submit" name="lookingForGroupRestSubmitJsonReturnXmlButton" value="Looking For Group (Submit Json / Return Xml)" />
+                                </li>
+                                <li class="form-group">
+                                    <input id="lookingForGroupRestSubmitXmlReturnJsonButton" class="btn btn-primary" type="submit" name="lookingForGroupRestSubmitXmlReturnJsonButton" value="Looking For Group (Submit Soap Xml / Return Json)" />
+                                </li>
+                                <li class="form-group">
+                                    <input id="lookingForGroupRestSubmitXmlReturnXmlButton" class="btn btn-primary" type="submit" name="lookingForGroupRestSubmitXmlReturnXmlButton" value="Looking For Group (Submit Soap Xml / Return Xml)" />
+                                </li>
+                                <li class="form-group">
+                                    <input id="lookingForGroupSoapButton" class="btn btn-primary" type="submit" name="lookingForGroupSoapButton" value="Looking For Group (Soap)" />
+                                </li>
+                            </ul>
+                        </fieldset>
+                    </form>
+                </div>
+            </div>
+		</div>
+	</body>
+	<script src="js/jquery-1.11.2.min.js"></script>
+	<script src="js/bootstrap.min.js"></script>
+    <script src="js/WcfService.js"></script>
+</html>
