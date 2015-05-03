@@ -12,12 +12,7 @@ namespace PenBlade.Example.Service
             return HelloWorld();
         }
 
-        public string HelloWorldRestReturnJson()
-        {
-            return HelloWorld();
-        }
-
-        public string HelloWorldRestReturnXml()
+        public string HelloWorldRest()
         {
             return HelloWorld();
         }
@@ -35,12 +30,7 @@ namespace PenBlade.Example.Service
         }
 
         // For REST based requests if multiple parameters are required, then you have to create a request object that contains all of the parameters.
-        public string WelcomeHomeRestReturnJson(string type)
-        {
-            return WelcomeHome(type);
-        }
-
-        public string WelcomeHomeRestReturnXml(string type)
+        public string WelcomeHomeRest(string type)
         {
             return WelcomeHome(type);
         }
@@ -57,12 +47,7 @@ namespace PenBlade.Example.Service
             return LookingForGroup(request);
         }
 
-        public LookingForGroupResponse LookingForGroupRestReturnJson(LookingForGroupRequest request)
-        {
-            return LookingForGroup(request);
-        }
-
-        public LookingForGroupResponse LookingForGroupRestReturnXml(LookingForGroupRequest request)
+        public LookingForGroupResponse LookingForGroupRest(LookingForGroupRequest request)
         {
             return LookingForGroup(request);
         }

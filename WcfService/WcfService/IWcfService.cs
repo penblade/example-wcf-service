@@ -18,12 +18,8 @@ namespace PenBlade.Example.Service
         string HelloWorldSoap();
 
         [OperationContract]
-        [WebInvoke(Method = "POST", BodyStyle = WebMessageBodyStyle.WrappedRequest, ResponseFormat = WebMessageFormat.Json, UriTemplate = "HelloWorldRestReturnJson")]
-        string HelloWorldRestReturnJson();
-
-        [OperationContract]
-        [WebInvoke(Method = "POST", BodyStyle = WebMessageBodyStyle.WrappedRequest, ResponseFormat = WebMessageFormat.Xml, UriTemplate = "HelloWorldRestReturnXml")]
-        string HelloWorldRestReturnXml();
+        [WebInvoke(Method = "POST", BodyStyle = WebMessageBodyStyle.WrappedRequest, UriTemplate = "HelloWorld")]
+        string HelloWorldRest();
         #endregion
 
         #region WelcomeHome
@@ -31,12 +27,8 @@ namespace PenBlade.Example.Service
         string WelcomeHomeSoap(string type);
 
         [OperationContract]
-        [WebInvoke(Method = "POST", BodyStyle = WebMessageBodyStyle.WrappedRequest, ResponseFormat = WebMessageFormat.Json, UriTemplate = "WelcomeHomeRestReturnJson")]
-        string WelcomeHomeRestReturnJson(string type);
-
-        [OperationContract]
-        [WebInvoke(Method = "POST", BodyStyle = WebMessageBodyStyle.WrappedRequest, ResponseFormat = WebMessageFormat.Xml, UriTemplate = "WelcomeHomeRestReturnXml")]
-        string WelcomeHomeRestReturnXml(string type);
+        [WebInvoke(Method = "POST", BodyStyle = WebMessageBodyStyle.WrappedRequest, UriTemplate = "WelcomeHome")]
+        string WelcomeHomeRest(string type);
         #endregion
 
         #region LookingForGroup
@@ -44,15 +36,10 @@ namespace PenBlade.Example.Service
         LookingForGroupResponse LookingForGroupSoap(LookingForGroupRequest request);
 
         [OperationContract]
-        [WebInvoke(Method = "POST", BodyStyle = WebMessageBodyStyle.WrappedRequest, ResponseFormat = WebMessageFormat.Json, UriTemplate = "LookingForGroupRestReturnJson")]
-        LookingForGroupResponse LookingForGroupRestReturnJson(LookingForGroupRequest request);
-
-        [OperationContract]
-        [WebInvoke(Method = "POST", BodyStyle = WebMessageBodyStyle.WrappedRequest, ResponseFormat = WebMessageFormat.Xml, UriTemplate = "LookingForGroupRestReturnXml")]
-        LookingForGroupResponse LookingForGroupRestReturnXml(LookingForGroupRequest request);
+        [WebInvoke(Method = "POST", BodyStyle = WebMessageBodyStyle.WrappedRequest, UriTemplate = "LookingForGroup")]
+        LookingForGroupResponse LookingForGroupRest(LookingForGroupRequest request);
         #endregion
     }
-
 
     [DataContract]
     public class LookingForGroupRequest

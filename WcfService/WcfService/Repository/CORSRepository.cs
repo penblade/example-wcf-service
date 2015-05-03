@@ -56,6 +56,7 @@ namespace PenBlade.Example.Service.Repository
                 context.Response.AddHeader("Cache-Control", "no-cache");
                 context.Response.AddHeader("Access-Control-Allow-Methods", "GET, POST");
                 context.Response.AddHeader("Access-Control-Allow-Headers", "Content-Type, Accept");
+                context.Response.AddHeader("Access-Control-Allow-Headers", "SOAPAction, Accept");
                 context.Response.AddHeader("Access-Control-Max-Age", "1728000");
                 context.Response.End();
             }

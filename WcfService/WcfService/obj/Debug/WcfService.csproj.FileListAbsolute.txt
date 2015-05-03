@@ -4,3 +4,9 @@ C:\FileServer\Solutions\StaticSite\Site\WcfService\WcfService\bin\PenBlade.Examp
 C:\FileServer\Solutions\StaticSite\Site\WcfService\WcfService\bin\PenBlade.Example.Service.pdb
 C:\FileServer\Solutions\StaticSite\Site\WcfService\WcfService\obj\Debug\PenBlade.Example.Service.dll
 C:\FileServer\Solutions\StaticSite\Site\WcfService\WcfService\obj\Debug\PenBlade.Example.Service.pdb
+C:\FileServer\Solutions\StaticSite\Site\example-wcf-service\WcfService\WcfService\bin\PenBlade.Example.Service.dll.config
+C:\FileServer\Solutions\StaticSite\Site\example-wcf-service\WcfService\WcfService\bin\PenBlade.Example.Service.dll
+C:\FileServer\Solutions\StaticSite\Site\example-wcf-service\WcfService\WcfService\bin\PenBlade.Example.Service.pdb
+C:\FileServer\Solutions\StaticSite\Site\example-wcf-service\WcfService\WcfService\obj\Debug\WcfService.csprojResolveAssemblyReference.cache
+C:\FileServer\Solutions\StaticSite\Site\example-wcf-service\WcfService\WcfService\obj\Debug\PenBlade.Example.Service.dll
+C:\FileServer\Solutions\StaticSite\Site\example-wcf-service\WcfService\WcfService\obj\Debug\PenBlade.Example.Service.pdb

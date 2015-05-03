@@ -4,6 +4,7 @@ WcfService = function()
     var getSuccess =
         function (result, status, xhr) {
             alert("Success:\nreadyState: " + xhr.readyState + "\nstatus: " + xhr.status + "\n\nresponseText:\n" + xhr.responseText + "\n\nresponseXML:\n" + xhr.responseXML + "\n\nxmlhttp:\n" + xhr);
+            $('#ErrorMessage').html('Success');
         };
 
     var getError =
@@ -18,7 +19,7 @@ WcfService = function()
             $.ajax({
                 type: "POST",
                 // Service Uri + Endpoint address (web.config) + UriTemplate (defined in service contract on the interface)
-                url: "http://localhost:58205/WcfService.svc/rest/HelloWorldRestReturnJson",
+                url: "http://localhost:58205/WcfService.svc/rest/HelloWorld",
                 dataType: "json",
                 contentType: "text/json; charset=utf-8",  // request type sent to web service
                 data: "",
@@ -35,7 +36,7 @@ WcfService = function()
             $.ajax({
                 type: "POST",
                 // Service Uri + Endpoint address (web.config) + UriTemplate (defined in service contract on the interface
-                url: "http://localhost:58205/WcfService.svc/rest/HelloWorldRestReturnXml",
+                url: "http://localhost:58205/WcfService.svc/rest/HelloWorld",
                 dataType: "xml",
                 contentType: "text/json; charset=utf-8",  // request type sent to web service
                 data: "",
@@ -52,10 +53,10 @@ WcfService = function()
             $.ajax({
                 type: "POST",
                 // Service Uri + Endpoint address (web.config) + UriTemplate (defined in service contract on the interface)
-                url: "http://localhost:58205/WcfService.svc/rest/HelloWorldRestReturnJson",
+                url: "http://localhost:58205/WcfService.svc/rest/HelloWorld",
                 dataType: "json",
                 contentType: "text/xml; charset=utf-8",  // request type sent to web service
-                headers: { SOAPAction: "http://www.penblade.com/example/service/IWcfService/HelloWorldRestReturnJson" },
+                headers: { SOAPAction: "http://www.penblade.com/example/service/IWcfService/HelloWorldRest" },
                 data: "",
                 success: getSuccess,
                 error: getError
@@ -69,7 +70,7 @@ WcfService = function()
         function () {
             // Create the xml for the soap request.  This xml should be the same as a SoapUI request
             // The soap environment, namespace, and data are all constants when calling an api.
-            var parameters = '<ns:HelloWorldRestReturnXml></ns:HelloWorldRestReturnXml>';
+            var parameters = '<ns:HelloWorldRest></ns:HelloWorldRest>';
             var soapRequest = '<soapenv:Envelope xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/" xmlns:ns="http://www.penblade.com/example/service/"><soapenv:Body>' + parameters + '</soapenv:Body></soapenv:Envelope>';
 
             $.ajax({
@@ -78,7 +79,7 @@ WcfService = function()
                 url: "http://localhost:58205/WcfService.svc",
                 dataType: "xml",
                 contentType: "text/xml; charset=utf-8",  // request type sent to web service
-                headers: { SOAPAction: "http://www.penblade.com/example/service/IWcfService/HelloWorldRestReturnXml" },
+                headers: { SOAPAction: "http://www.penblade.com/example/service/IWcfService/HelloWorldRest" },
                 data: soapRequest,
                 success: getSuccess,
                 error: getError
@@ -120,7 +121,7 @@ WcfService = function()
             $.ajax({
                 type: "POST",
                 // Service Uri + Endpoint address (web.config) + UriTemplate (defined in service contract on the interface)
-                url: "http://localhost:58205/WcfService.svc/rest/WelcomeHomeRestReturnJson",
+                url: "http://localhost:58205/WcfService.svc/rest/WelcomeHome",
                 dataType: "json",
                 contentType: "text/json; charset=utf-8",  // request type sent to web service
                 data: JSON.stringify(jsonRequest),
@@ -139,7 +140,7 @@ WcfService = function()
             $.ajax({
                 type: "POST",
                 // Service Uri + Endpoint address (web.config) + UriTemplate (defined in service contract on the interface
-                url: "http://localhost:58205/WcfService.svc/rest/WelcomeHomeRestReturnXml",
+                url: "http://localhost:58205/WcfService.svc/rest/WelcomeHome",
                 dataType: "xml",
                 contentType: "text/json; charset=utf-8",  // request type sent to web service
                 data: JSON.stringify(jsonRequest),
@@ -153,15 +154,15 @@ WcfService = function()
 
     this.welcomeHomeRestSubmitXmlReturnJson =
         function () {
-            var soapRequest = '<ns:WelcomeHomeRestReturnJson xmlns:ns="http://www.penblade.com/example/service/"><ns:type>Xml/Json</ns:type></ns:WelcomeHomeRestReturnJson>';
+            var soapRequest = '<ns:WelcomeHomeRest xmlns:ns="http://www.penblade.com/example/service/"><ns:type>Xml/Json</ns:type></ns:WelcomeHomeRest>';
 
             $.ajax({
                 type: "POST",
                 // Service Uri + Endpoint address (web.config) + UriTemplate (defined in service contract on the interface)
-                url: "http://localhost:58205/WcfService.svc/rest/WelcomeHomeRestReturnJson",
+                url: "http://localhost:58205/WcfService.svc/rest/WelcomeHome",
                 dataType: "json",
                 contentType: "text/xml; charset=utf-8",  // request type sent to web service
-                headers: { SOAPAction: "http://www.penblade.com/example/service/IWcfService/WelcomeHomeRestReturnJson" },
+                headers: { SOAPAction: "http://www.penblade.com/example/service/IWcfService/WelcomeHomeRest" },
                 data: soapRequest,
                 success: getSuccess,
                 error: getError
@@ -175,16 +176,16 @@ WcfService = function()
         function () {
             // Create the xml for the soap request.  This xml should be the same as a SoapUI request
             // The soap environment, namespace, and data are all constants when calling an api.
-            var parameters = '<ns:WelcomeHomeRestReturnXml><ns:type>Xml/Xml</ns:type></ns:WelcomeHomeRestReturnXml>';
+            var parameters = '<ns:WelcomeHomeRest><ns:type>Xml/Xml</ns:type></ns:WelcomeHomeRest>';
             var soapRequest = '<soapenv:Envelope xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/" xmlns:ns="http://www.penblade.com/example/service/"><soapenv:Body>' + parameters + '</soapenv:Body></soapenv:Envelope>';
 
             $.ajax({
                 type: "POST",
-                // Service Uri + Endpoint address (web.config) + UriTemplate (defined in service contract on the interface
+                // Service Uri + Endpoint address (web.config) + UriTemplate (defined in service contract on the interface)
                 url: "http://localhost:58205/WcfService.svc",
                 dataType: "xml",
                 contentType: "text/xml; charset=utf-8",  // request type sent to web service
-                headers: { SOAPAction: "http://www.penblade.com/example/service/IWcfService/WelcomeHomeRestReturnXml" },
+                headers: { SOAPAction: "http://www.penblade.com/example/service/IWcfService/WelcomeHomeRest" },
                 data: soapRequest,
                 success: getSuccess,
                 error: getError
@@ -203,7 +204,7 @@ WcfService = function()
 
             $.ajax({
                 type: "POST",
-                // Service Uri + Endpoint address (web.config) + UriTemplate (defined in service contract on the interface
+                // Service Uri + Endpoint address (web.config) + UriTemplate (defined in service contract on the interface)
                 url: "http://localhost:58205/WcfService.svc",
                 dataType: "xml",
                 contentType: "text/xml; charset=utf-8",  // request type sent to web service
@@ -226,7 +227,7 @@ WcfService = function()
             $.ajax({
                 type: "POST",
                 // Service Uri + Endpoint address (web.config) + UriTemplate (defined in service contract on the interface)
-                url: "http://localhost:58205/WcfService.svc/rest/LookingForGroupRestReturnJson",
+                url: "http://localhost:58205/WcfService.svc/rest/LookingForGroup",
                 dataType: "json",
                 contentType: "text/json; charset=utf-8",  // request type sent to web service
                 data: JSON.stringify(jsonRequest),
@@ -245,7 +246,7 @@ WcfService = function()
             $.ajax({
                 type: "POST",
                 // Service Uri + Endpoint address (web.config) + UriTemplate (defined in service contract on the interface
-                url: "http://localhost:58205/WcfService.svc/rest/LookingForGroupRestReturnXml",
+                url: "http://localhost:58205/WcfService.svc/rest/LookingForGroup",
                 dataType: "xml",
                 contentType: "text/json; charset=utf-8",  // request type sent to web service
                 data: JSON.stringify(jsonRequest),
@@ -260,15 +261,15 @@ WcfService = function()
     this.lookingForGroupRestSubmitXmlReturnJson =
         function () {
 
-            var soapRequest = '<ns:LookingForGroupRestReturnJson xmlns:ns="http://www.penblade.com/example/service/" xmlns:data="http://schemas.datacontract.org/2004/07/PenBlade.Example.Service"><ns:request><data:AppToken>6158d0cc-32b3-4a62-8e16-903871097778</data:AppToken><data:IsApproved>1</data:IsApproved><data:UserId>2</data:UserId><data:Username>Fodder</data:Username></ns:request></ns:LookingForGroupRestReturnJson>';
+            var soapRequest = '<ns:LookingForGroupRest xmlns:ns="http://www.penblade.com/example/service/" xmlns:data="http://schemas.datacontract.org/2004/07/PenBlade.Example.Service"><ns:request><data:AppToken>6158d0cc-32b3-4a62-8e16-903871097778</data:AppToken><data:IsApproved>1</data:IsApproved><data:UserId>2</data:UserId><data:Username>Fodder</data:Username></ns:request></ns:LookingForGroupRest>';
 
             $.ajax({
                 type: "POST",
                 // Service Uri + Endpoint address (web.config) + UriTemplate (defined in service contract on the interface)
-                url: "http://localhost:58205/WcfService.svc/rest/LookingForGroupRestReturnJson",
+                url: "http://localhost:58205/WcfService.svc/rest/LookingForGroup",
                 dataType: "json",
                 contentType: "text/xml; charset=utf-8",  // request type sent to web service
-                headers: { SOAPAction: "http://www.penblade.com/example/service/IWcfService/LookingForGroupRestReturnJson" },
+                headers: { SOAPAction: "http://www.penblade.com/example/service/IWcfService/LookingForGroupRest" },
                 data: soapRequest,
                 success: getSuccess,
                 error: getError
@@ -282,7 +283,7 @@ WcfService = function()
         function () {
             // Create the xml for the soap request.  This xml should be the same as a SoapUI request
             // The soap environment, namespace, and data are all constants when calling an api.
-            var parameters = '<ns:LookingForGroupRestReturnXml><ns:request><data:AppToken>6158d0cc-32b3-4a62-8e16-903871097778</data:AppToken><data:IsApproved>0</data:IsApproved><data:UserId>3</data:UserId><data:Username>GreedyOne</data:Username></ns:request></ns:LookingForGroupRestReturnXml>';
+            var parameters = '<ns:LookingForGroupRest><ns:request><data:AppToken>6158d0cc-32b3-4a62-8e16-903871097778</data:AppToken><data:IsApproved>0</data:IsApproved><data:UserId>3</data:UserId><data:Username>GreedyOne</data:Username></ns:request></ns:LookingForGroupRest>';
             var soapRequest = '<soapenv:Envelope xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/" xmlns:ns="http://www.penblade.com/example/service/" xmlns:data="http://schemas.datacontract.org/2004/07/PenBlade.Example.Service"><soapenv:Body>' + parameters + '</soapenv:Body></soapenv:Envelope>';
 
             $.ajax({
@@ -291,7 +292,7 @@ WcfService = function()
                 url: "http://localhost:58205/WcfService.svc",
                 dataType: "xml",
                 contentType: "text/xml; charset=utf-8",  // request type sent to web service
-                headers: { SOAPAction: "http://www.penblade.com/example/service/IWcfService/LookingForGroupRestReturnXml" },
+                headers: { SOAPAction: "http://www.penblade.com/example/service/IWcfService/LookingForGroupRest" },
                 data: soapRequest,
                 success: getSuccess,
                 error: getError
