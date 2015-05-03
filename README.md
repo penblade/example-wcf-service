@@ -6,6 +6,10 @@ Overview
 
 •This project is limited in scope to providing a few examples on how to setup a WCF web service with REST (REpresentational State Transfer) endpoint to submit Xml or Json and return Xml or Json while also providing a standard SOAP (Simple Object Access Protocol) endpoint.
 
+Updates
+
+•Added automaticFormatSelectionEnabled so I could remove the extra REST method that is no longer needed.  I can still force the return format I want with the headers I already set.  I did rename the method name to illustrate that the uritemplate can be different from the method name, however, if you submit XML the tag must match the method name not the URI template.
+
 CORS
 
 •Modern web browsers except IE honor the Cross-Origin Resource Sharing (CORS) W3C recommendation. You can test this web service and javascript locally if you use IE11 or if you whitelist localhost or file in the web service as I have done in this example. The principle desire of CORS is to not allow client side languages like JavaScript to access web services on another domain unless permission is granted by the web service. Browser extensions such as the Chrome extension have manifest files that allow you to give permission to bypass CORS for specific domains.
